@@ -44,7 +44,19 @@ body {
 .cube a {
   position: relative;
   top: 48%;
-  font-size: 30px;
+  font-size: 150%;
+}
+
+.flash {
+  font-size: 150%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
 }
 
 .nav a {
@@ -92,11 +104,5 @@ body {
 
 .nav-list > li:first-child:before {
   content: "";
-}
-
-.flash > p {
-  display: none;
-  text-align: center;
-  font-size: 30px;
 }
 
