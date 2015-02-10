@@ -3,6 +3,7 @@ function tumbleInfo() {
 
   $window.on("mousedown keydown", function (e) {
     var clickedOnAnchor = $(e.target).is('a');
+
     if (clickedOnAnchor) return;
      
     throttledFlashInfo();

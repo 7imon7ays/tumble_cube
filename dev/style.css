@@ -1,4 +1,6 @@
 body {
+  font-family: garamond;
+  color: rgba(0,0,0,.5);
   background: rgba(227,227,227,1);
   background: -moz-linear-gradient(left, rgba(227,227,227,1) 0%, rgba(242,242,242,1) 0%,
     rgba(250,250,250,1) 52%, rgba(235,235,235,1) 100%);
@@ -33,28 +35,55 @@ body {
   -webkit-transform-style: preserve-3d;
 }
 
+.cube a,
+.nav a {
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
 .cube a {
   position: relative;
   top: 48%;
-  color:rgba(0,0,0,0.5);
   font-size: 30px;
-  text-decoration: none;
-  font-family: garamond;
+}
+
+.nav a {
+  font-size: 20px;
 }
 
 .face {
   height: 360px;
   width: 360px;
   position: absolute;
-  background:rgba(255,255,255,0.1);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  background: rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.nav-list {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: -10px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-list > li {
+  display: inline;
+}
+
+.nav-list > li:before {
+  content: "| ";
+}
+
+.nav-list > li:first-child:before {
+  content: "";
 }
 
 .flash > p {
   display: none;
-  color:rgba(0,0,0,0.5);
-  font-family: garamond;
   text-align: center;
   font-size: 30px;
 }
