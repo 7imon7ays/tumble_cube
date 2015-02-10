@@ -48,7 +48,7 @@ body {
 }
 
 .nav a {
-  font-size: 20px;
+  font-size: 120%;
 }
 
 .face {
@@ -62,12 +62,23 @@ body {
 
 .nav-list {
   text-align: center;
-  width: 100%;
   position: fixed;
-  bottom: -10px;
+  width: 100%;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.window-bottom {
+  bottom: 20px;
+}
+
+.window-edge {
+  bottom: -10px;
 }
 
 .nav-list > li {

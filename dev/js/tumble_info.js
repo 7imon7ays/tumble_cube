@@ -1,4 +1,4 @@
-function tumbleInfo() {
+function tumbleInfo () {
   var throttledFlashInfo = $.throttle(flashInfo, 3000);
 
   $window.on("mousedown keydown", function (e) {

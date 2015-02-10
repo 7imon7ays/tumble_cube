@@ -8,6 +8,7 @@
     tumbleCubeDesktop($cube, $window);
     tumbleInfo();
   }
+  tumbleNav();
 
 }());
 
