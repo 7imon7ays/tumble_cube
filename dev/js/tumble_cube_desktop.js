@@ -6,7 +6,6 @@ function tumbleCubeDesktop($cube, $window) {
 
   tumbleScroll();
   tumbleMove();
-  tumbleDrag();
 
   function tumbleScroll() {
     $window.on('mousewheel', function(e) {
@@ -55,22 +54,6 @@ function tumbleCubeDesktop($cube, $window) {
       }
 
       tumble();
-    });
-  }
-
-  function tumbleDrag() {
-    var xOrigin, yOrigin;
-    $cube.mousedown(function(e) {
-      xOrigin = e.clientX, yOrigin = e.clientY;
-      $window.mousemove(function(e) {
-          xAngle += (e.clientX - xOrigin) / 50;
-          yAngle -= (e.clientY - yOrigin) / 50;
-          tumble();
-      });
-    });
-
-    $window.mouseup(function() {
-      $window.off("mousemove");
     });
   }
 
