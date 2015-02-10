@@ -10,6 +10,7 @@ function tumbleNav () {
             .addClass('window-bottom');
 
     $window.off("mousewheel touchmove", moveUpNav);
+    $navlist.off('mouseenter', flashScrollInfo);
   }
 
   function moveDownNav () {
