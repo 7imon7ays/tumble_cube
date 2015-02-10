@@ -1,8 +1,10 @@
 function tumbleNav () {
   var $navlist = $(".nav-list");
 
-  $navlist.removeClass('window-bottom')
-          .addClass('window-edge');
+  $window.on('hover', function (e) {
+    $navlist.removeClass('window-bottom')
+            .addClass('window-edge');
+  });
 
   $window.on("mousewheel touchmove", moveUpNav);
 
