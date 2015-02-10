@@ -6,7 +6,6 @@
     tumbleCubeMobile($cube);
   } else {
     tumbleCubeDesktop($cube, $window);
-    tumbleInfo();
   }
   tumbleNav();
 
