@@ -4,15 +4,12 @@
 
   if (isMobile()) {
     tumbleCubeMobile($cube);
+    titlCubeMobile();
   } else {
     tumbleCubeDesktop($cube, $window);
+    titlCubeDesktop();
   }
 
-  var offsetScroll = $.Event("mousewheel", {
-    deltaX: -90, deltaY: -10, which: 1
-  });
-
-  $window.trigger(offsetScroll);
   tumbleNav();
 }());
 
